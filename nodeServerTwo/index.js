@@ -9,7 +9,8 @@ app.use(bodyparser.json());
 
 app.get('/demo',  function(req, res){
     return res.json({
-        message: 'hello world'
+        message: 'hello world',
+        dateTime: Date.now()
     });
 });
 
